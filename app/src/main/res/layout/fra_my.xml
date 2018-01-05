@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/class_biejing">
+
+        <ImageView
+            android:id="@+id/iv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/my_shezi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_student_preview"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/class_tou" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_student_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小憨憨"
+                    android:textColor="@color/text_white"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/iv_student_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/tv_student_name"
+                    android:src="@mipmap/class_nan" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_xqfx"
+        style="@style/my_rl_style">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_student_analysis"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/my_item_ts" />
+
+        <ImageView
+            style="@style/my_iv_style"
+            android:src="@mipmap/class_more" />
+    </RelativeLayout>
+
+    <View style="@style/Line.Hor_margin" />
+
+    <RelativeLayout
+        android:id="@+id/rl_student_fx"
+        style="@style/my_rl_style">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_students_analysis"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/my_item_ts" />
+
+        <ImageView
+            style="@style/my_iv_style"
+            android:src="@mipmap/class_more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_yjfk"
+        style="@style/my_rl_style"
+        android:layout_marginTop="@dimen/gap_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_feedback"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/my_item_ts" />
+
+        <ImageView
+            android:src="@mipmap/class_more"
+            style="@style/my_iv_style" />
+    </RelativeLayout>
+
+    <View style="@style/Line.Hor_margin" />
+
+    <RelativeLayout
+        android:id="@+id/rl_gy"
+        style="@style/my_rl_style">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_gy"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/my_item_ts" />
+
+        <ImageView
+            style="@style/my_iv_style"
+            android:src="@mipmap/class_more" />
+    </RelativeLayout>
+</LinearLayout>

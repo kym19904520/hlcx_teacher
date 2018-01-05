@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/def_sub_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_1"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="@dimen/topic_padding"
+        android:paddingRight="@dimen/topic_padding">
+
+        <TextView
+            android:id="@+id/tv_seq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/20"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+
+        <!--<TextView
+            android:id="@+id/tv_subject_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/topic_title_margin_left"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/class_more"
+            android:paddingBottom="5dp"
+            android:text="来啊，宠爱我啊"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/topic_title_text" />-->
+        <com.up.study.weight.tvhtml.RichText
+            android:id="@+id/wv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/topic_title_margin_left"
+            android:layout_weight="1"
+            android:paddingBottom="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/class_more" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_title">
+
+        <TextView
+            style="@style/tv_topic_tip_title"
+            android:layout_marginLeft="@dimen/topic_padding"
+            android:text="知识点" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <!--主观题的内容-->
+    <com.up.study.weight.tvhtml.RichText
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_hint"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone" />
+
+    <!--客观题的选项-->
+    <com.up.common.widget.MyListView
+        android:id="@+id/mlv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_hint"
+        android:divider="@null"
+        android:scrollbars="none"></com.up.common.widget.MyListView>
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/test_selector_big" />
+</RelativeLayout>

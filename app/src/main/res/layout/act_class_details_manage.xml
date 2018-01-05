@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_apply_for_teacher"
+                        style="@style/class_tv_type_style"
+                        android:drawableLeft="@mipmap/class_yjjx_02"
+                        android:text="教师（0）" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_teacher_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/text_white"></android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_no_teacher"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="暂时没有老师喔~"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_ranking"
+                style="@style/class_tv_type_style"
+                android:drawableLeft="@mipmap/class_yjjx_02"
+                android:text="学生（0）" />
+
+            <LinearLayout
+                android:id="@+id/ll_no_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:background="@mipmap/class_banji_01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/class_no_student"
+                    android:textColor="#B2B2B2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/class_add_student"
+                    android:textColor="#B2B2B2" />
+            </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_student_ranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerHeight="0.5dp"></ListView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

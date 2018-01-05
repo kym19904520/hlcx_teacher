@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.up.teacher"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 2
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.lzy.net:okgo:2.1.4'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    testCompile 'junit:junit:4.12'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    compile 'com.github.chrisbanes:PhotoView:1.2.6'
+    compile 'com.yuyh.imgsel:library:1.3.8'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'me.gujun.android.taggroup:library:1.4@aar'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.25'//万能rv适配器
+    compile project(':pickerview')
+}

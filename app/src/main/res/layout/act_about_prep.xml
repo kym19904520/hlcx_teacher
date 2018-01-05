@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/wd_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="介绍"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_more" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="轻松学是一款基于记录学生错题数据，进而帮助学生分析知识薄弱点，进行有针对性的练习和轻松提升成绩的产品。轻松学帮助老师精准定位教学目标，通过全方位学情数据统计，大幅提升老师授课效果。家长也能随时随地了解孩子学习情况，从而更好的进行查缺补漏，实现从课堂到家庭教学上的无缝对接。"
+        android:textColor="@color/text_gray_q"
+        android:textSize="@dimen/text_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="QQ:3082477974"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_more" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="福建启迪教育有限公司版权所有"
+        android:textColor="@color/text_gray_q"
+        android:textSize="@dimen/text_normal" />
+</LinearLayout>

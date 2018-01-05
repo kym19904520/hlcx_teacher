@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_02"
+                style="@style/Item">
+
+                <TextView
+                    style="@style/ItemTitle"
+                    android:text="@string/section02" />
+
+                <TextView
+                    android:id="@+id/tv_02"
+                    style="@style/ItemContent"
+                    android:text="@string/section12" />
+
+                <ImageView style="@style/ItemArrow" />
+            </LinearLayout>
+
+            <View style="@style/Line.Hor_margin" />
+
+            <LinearLayout
+                android:id="@+id/ll_01"
+                style="@style/Item">
+
+                <TextView
+                    style="@style/ItemTitle"
+                    android:text="@string/section01" />
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    style="@style/ItemContent"
+                    android:text="@string/section11" />
+
+                <ImageView style="@style/ItemArrow" />
+            </LinearLayout>
+
+            <View style="@style/Line.Hor_margin" />
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_03"
+                style="@style/Item">
+
+                <TextView
+                    style="@style/ItemTitle"
+                    android:text="@string/section03" />
+
+                <TextView
+                    android:id="@+id/tv_03"
+                    style="@style/ItemContent"
+                    android:text="@string/section13" />
+
+                <ImageView style="@style/ItemArrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll032"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/Line.Hor_margin" />
+
+                <LinearLayout
+                    android:id="@+id/ll_032"
+                    style="@style/Item">
+
+                    <TextView
+                        style="@style/ItemTitle"
+                        android:text="@string/section032" />
+
+                    <TextView
+                        android:id="@+id/tv_032"
+                        style="@style/ItemContent"
+                        android:text="@string/section13" />
+
+                    <ImageView style="@style/ItemArrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll033"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/Line.Hor_margin" />
+
+                <LinearLayout
+                    android:id="@+id/ll_033"
+                    style="@style/Item">
+
+                    <TextView
+                        style="@style/ItemTitle"
+                        android:text="@string/section033" />
+
+                    <TextView
+                        android:id="@+id/tv_033"
+                        style="@style/ItemContent"
+                        android:text="@string/section13" />
+
+                    <ImageView style="@style/ItemArrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/Line.Hor_margin" />
+
+            <LinearLayout
+                android:id="@+id/ll_04"
+                style="@style/Item">
+
+                <TextView
+                    style="@style/ItemTitle"
+                    android:text="@string/section04" />
+
+                <TextView
+                    android:id="@+id/tv_04"
+                    style="@style/ItemContent"
+                    android:text="@string/section14" />
+
+                <ImageView style="@style/ItemArrow" />
+            </LinearLayout>
+
+            <View style="@style/Line.Hor_margin" />
+
+            <LinearLayout
+                android:id="@+id/ll_05"
+                style="@style/Item">
+
+                <TextView
+                    style="@style/ItemTitle"
+                    android:text="@string/section05" />
+
+                <TextView
+                    android:id="@+id/tv_05"
+                    style="@style/ItemContent"
+                    android:text="@string/section15" />
+
+                <ImageView style="@style/ItemArrow" />
+            </LinearLayout>
+
+            <View style="@style/Line.Hor_margin" />
+
+            <LinearLayout
+                android:id="@+id/ll_06"
+                style="@style/Item">
+
+                <TextView
+                    style="@style/ItemTitle"
+                    android:text="@string/section06" />
+
+                <TextView
+                    android:id="@+id/tv_06"
+                    style="@style/ItemContent"
+                    android:text="@string/section16" />
+
+                <ImageView style="@style/ItemArrow" />
+            </LinearLayout>
+
+            <View style="@style/Line.Hor_margin" />
+
+            <LinearLayout
+                android:id="@+id/ll_07"
+                style="@style/Item">
+
+                <TextView
+                    style="@style/ItemTitle"
+                    android:text="@string/section07" />
+
+                <TextView
+                    android:id="@+id/tv_07"
+                    style="@style/ItemContent"
+                    android:text="@string/section17" />
+
+                <ImageView style="@style/ItemArrow" />
+            </LinearLayout>
+
+            <View style="@style/Line.Hor_margin" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/button_big"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:text="下一步" />
+</LinearLayout>

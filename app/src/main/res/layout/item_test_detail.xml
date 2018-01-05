@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_topic_kgt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv"
+        android:gravity="right"
+        android:background="@color/def_sub_bg"
+        android:paddingBottom="16dp"
+        android:paddingRight="@dimen/topic_padding"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0分"
+            android:textColor="@color/text_red"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

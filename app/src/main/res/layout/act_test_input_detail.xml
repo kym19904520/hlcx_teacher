@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Top_Back" />
+
+        <TextView
+            style="@style/Top_Title"
+            android:text="作业详情" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            style="@style/Img_Top_Right"
+            android:src="@mipmap/home_count" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/sy_38"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="语文二年级练习题"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_more" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="平均分"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_more" />
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:textSize="28sp" />
+        </LinearLayout>
+        <TextView
+            style="@style/tab_tv"
+            android:id="@+id/tv_class"
+            android:text="一年一班"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_gravity="center_horizontal"
+             />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_knowledge_weakness"
+        style="@style/sub_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/wd_12"
+        android:text="知识薄弱点" />
+
+    <com.up.study.weight.SearchTipsGroupView
+        android:id="@+id/search_tips"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.up.study.weight.SearchTipsGroupView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/sub_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/class_yjjx_02"
+            android:text="提交人数及排名" />
+
+        <TextView
+            android:id="@+id/tv_num_seq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0"
+            android:textColor="@color/text_gray_s"
+            android:textSize="15sp"
+            android:background="@color/def_bg"
+            android:paddingRight="@dimen/margin_normal" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        >
+    </ListView>
+
+</LinearLayout>

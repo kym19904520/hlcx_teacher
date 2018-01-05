@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_english_jf"
+        style="@style/class_rl_style">
+
+        <TextView
+            android:id="@+id/tv_norisuke"
+            style="@style/class_tv_name_style" />
+
+        <ImageView
+            android:id="@+id/iv_arrows06"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_jf_name"
+            android:layout_toLeftOf = "@+id/iv_arrows06"
+            style="@style/tv_jf_style" />
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+</LinearLayout>

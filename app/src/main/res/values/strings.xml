@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">轻松学教师端</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="error_reason_A">A.粗心，操作失误</string>
+    <string name="error_reason_B">B.知识点不懂</string>
+    <string name="error_reason_C">C.懂知识点，不懂答题思路</string>
+    <string name="error_reason_D">D.其他</string>
+    <string name="error_reason_1">粗心，操作失误</string>
+    <string name="error_reason_2">知识点不懂</string>
+    <string name="error_reason_3">懂知识点，不懂答题思路</string>
+    <string name="error_reason_4">其他</string>
+    <string name="capacity_zj">智能组卷</string>
+    <string name="next">下一步</string>
+    <string name="home_the_volume">出卷数</string>
+    <string name="home_average">失分率</string>
+    <string name="home_screen">筛选</string>
+    <string name="home_select_papers">选择试卷</string>
+    <string name="home_error_time">错误次数</string>
+    <string name="home_the_number">出题数</string>
+
+    <!--   班级   -->
+    <string name="class_title">班级</string>
+    <string name="class_add_audit">老师加入班级审核</string>
+    <string name="class_no_add">你还未添加班级喔~</string>
+    <string name="class_manage">班级管理</string>
+    <string name="class_teacher_manage">老师管理</string>
+    <string name="class_student_manage">学生管理</string>
+    <string name="class_another_name">班级别称</string>
+    <string name="class_add">创建班级</string>
+    <string name="class_save">保存</string>
+    <string name="class_audit">加入班级群审核</string>
+    <string name="class_no_student">该班级没有学生加入</string>
+    <string name="class_add_student">请在电脑版教师端加入学生</string>
+    <string name="class_language_jf">语文教辅</string>
+    <string name="class_math_jf">数学教辅</string>
+    <string name="class_english_jf">英语教辅</string>
+    <string name="class_add_class">创建班级</string>
+    <string name="class_matters_need_attention">注意事项</string>
+    <string name="class_import_name">请输入班级别称</string>
+    <string name="class_no_data">暂时没有数据喔~</string>
+    <string name="no_student">暂时没有学生~</string>
+    <string name="no_teacher">暂时没有老师~</string>
+    <string name="no_patriarch">暂时没有学生家长~</string>
+    <string name="no_zj">暂时没有章节~</string>
+    <string name="no_zsd">暂时没有知识点~</string>
+
+    <!--   我的   -->
+    <string name="my_knowledge_point">知识薄弱点top8</string>
+    <string name="my_knowledge_name">知识点名称</string>
+    <string name="my_error_rate">错误率</string>
+    <string name="my_section_grasp">章节掌握情况top8</string>
+    <string name="my_section_name">章节名称</string>
+    <string name="my_section">章节掌握情况</string>
+    <string name="my_topic">题目</string>
+    <string name="my_difficulty">难度</string>
+    <string name="my_difficulty_analyze">难题分析</string>
+    <string name="my_province_ranking">全省排行</string>
+    <string name="my_section_tb">章节</string>
+    <string name="my_knowledge_point_tb">知识点</string>
+    <string name="my_weakness_analyze">薄弱点分析</string>
+    <string name="my_graph">学习成长曲线</string>
+    <string name="my_grade_ranking">年级排行</string>
+    <string name="my_ability_value">能力值</string>
+    <string name="my_student_analysis">学情分析</string>
+    <string name="my_students_analysis">学生分析</string>
+    <string name="my_setting">设置</string>
+    <string name="my_affirm_quit">确认退出登录？</string>
+    <string name="delete">确认删除？</string>
+    <string name="my_confirm">确定</string>
+    <string name="my_cancel">取消</string>
+    <string name="my_name">姓名</string>
+    <string name="my_import_name">请输入姓名</string>
+    <string name="my_personage_message">个人信息</string>
+    <string name="my_select_sex">请选择性别</string>
+    <string name="my_knowledge_point_analysis">知识点学生分析</string>
+    <string name="my_feedback">意见反馈</string>
+    <string name="my_gy">关于</string>
+    <string name="remove">移除</string>
+    <string name="replace">相似题替换</string>
+    <string name="hint">提示</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <string-array name="my_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <!--Y C S S-->
+    <string name="section01">出版社</string>
+    <string name="section02">学段</string>
+    <string name="section03">章节</string>
+    <string name="section032">二级章节</string>
+    <string name="section033">三级章节</string>
+    <string name="section04">题型</string>
+    <string name="section05">难度</string>
+    <string name="section06">类型</string>
+    <string name="section07">来源</string>
+
+    <string name="section11">请选择</string>
+    <string name="section12">请选择</string>
+    <string name="section13">请选择</string>
+    <string name="section14">请选择</string>
+    <string name="section15">请选择</string>
+    <string name="section16">请选择</string>
+    <string name="section17">请选择</string>
+
+
+    <string name="knowledge01">知识点</string>
+    <string name="knowledge02">二级知识点</string>
+    <string name="knowledge03">三级知识点</string>
+    <string name="knowledge04">题型</string>
+    <string name="knowledge05">难度</string>
+    <string name="knowledge06">来源</string>
+
+    <string name="knowledge11">请选择</string>
+    <string name="knowledge12">请选择</string>
+    <string name="knowledge13">请选择</string>
+    <string name="knowledge14">请选择</string>
+    <string name="knowledge15">请选择</string>
+    <string name="knowledge16">请选择</string>
+
+    <string name="exercise01">年份</string>
+    <string name="exercise02">年级</string>
+    <string name="exercise03">学期</string>
+    <string name="exercise04">类型</string>
+    <string name="exercise05">难度</string>
+    <string name="exercise06">来源</string>
+
+    <string name="exercise11">请选择</string>
+    <string name="exercise12">请选择</string>
+    <string name="exercise13">请选择</string>
+    <string name="exercise14">请选择</string>
+    <string name="exercise15">请选择</string>
+    <string name="exercise16">请选择</string>
+    <!--Y C S S-->
+</resources>

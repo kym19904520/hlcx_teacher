@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_jf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_yw_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="语文教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows01"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_yw_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows01"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sx_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="数学教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows02"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_sx_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows02"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_yy_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="英语教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows03"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_yy_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows03"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wl_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="物理教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows04"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_wl_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows04"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_hx_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="化学教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows05"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_hx_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows05"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_zz_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="政治教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows06"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_zz_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows06"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ls_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="历史教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows07"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_ls_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows07"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sw_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="生物教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows08"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_sw_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows08"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_dl_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="地理教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows09"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_dl_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows09"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_yl_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="音乐教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows10"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_yl_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows10"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ty_jf"
+        style="@style/class_rl_style01">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="体育教辅" />
+
+        <ImageView
+            android:id="@+id/iv_arrows11"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_ty_jf"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@+id/iv_arrows11"
+            android:textColor="@color/text_gray_q" />
+
+    </RelativeLayout>
+
+    <View style="@style/class_view_style" />
+</LinearLayout>

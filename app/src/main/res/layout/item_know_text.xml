@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_zsd"
+    android:textColor="@color/colorPrimary"
+    android:textSize="13sp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:layout_height="30dp"
+    android:layout_gravity="center"
+    android:paddingBottom="5dp"
+    style="@style/tv_topic_type">
+</TextView>

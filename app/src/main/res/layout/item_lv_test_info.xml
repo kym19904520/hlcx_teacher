@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="3dp"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="33dp"-->
+    <!--android:background="#ffffff"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingRight="15dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="单选题"-->
+    <!--android:textColor="@color/text_black"-->
+    <!--android:textSize="@dimen/text_normal" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="(20)"-->
+    <!--android:textColor="@color/text_gray_s"-->
+    <!--android:textSize="@dimen/text_normal" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="right"-->
+    <!--android:text="小计 30分"-->
+    <!--android:textColor="@color/text_gray_s"-->
+    <!--android:textSize="@dimen/text_small" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+    <!--选择题-->
+    <LinearLayout
+        android:id="@+id/ll_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1/50  扫地的 扫 的读音是？"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="知识点"
+                    android:textColor="#ff7f00"
+                    android:textSize="11sp" />
+
+                <me.gujun.android.taggroup.TagGroup
+                    android:id="@+id/tag_group"
+                    style="@style/MyTag" />
+                <!--<TextView-->
+                <!--android:id="@+id/tv_know_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="3dp"-->
+                <!--android:background="@drawable/tag_bg_know"-->
+                <!--android:text="123"-->
+                <!--android:layout_marginLeft="7dp"-->
+                <!--android:textColor="#ff7f00"-->
+                <!--android:textSize="11sp" />-->
+            </LinearLayout>
+
+            <com.up.common.widget.MyListView
+                android:id="@+id/lv_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="right"
+                android:text="3分"
+                android:textColor="#fe3d3e"
+                android:textSize="@dimen/text_normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

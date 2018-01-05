@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/text_white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:text="倒数的认识"
+        android:textColor="@color/text_black"
+        style="@style/my_tv_details_style"/>
+
+    <TextView
+        android:id="@+id/tv_probability"
+        android:text="0%"
+        android:textColor="@color/text_red"
+        style="@style/my_tv_details_style" />
+</LinearLayout>

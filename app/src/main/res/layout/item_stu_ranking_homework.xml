@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:gravity="center_vertical"
+    android:background="@color/def_sub_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/class_gz"
+        android:paddingRight="8dp"
+        android:textColor="@color/text_black"
+        android:textSize="13sp" />
+    <!--<ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/class_student"
+        />-->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="陈涵"
+        android:paddingLeft="15dp"
+        android:textColor="@color/text_black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_scode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textColor="@color/text_red"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="正确率"
+        android:textColor="@color/text_black"
+        android:textSize="12sp" />
+</LinearLayout>

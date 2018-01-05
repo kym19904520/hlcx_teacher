@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/my_ll_analyze_style">
+
+                <com.up.study.weight.tvhtml.RichText
+                    android:id="@+id/tv_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/padding_more"
+                style="@style/my_ll_analyze_style">
+
+                <ImageView
+                    android:id="@+id/iv_difficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/my_xx02" />
+
+                <ImageView
+                    android:id="@+id/iv_difficulty01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/my_xx02" />
+
+                <ImageView
+                    android:id="@+id/iv_difficulty02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/my_xx02" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/padding_more"
+                style="@style/my_ll_analyze_style">
+
+                <TextView
+                    android:id="@+id/tv_error"
+                    style="@style/my_tv_details_style"
+                    android:text="0%"
+                    android:textColor="@color/text_red" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

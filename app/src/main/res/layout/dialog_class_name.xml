@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="20dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:paddingBottom="14dp"
+        android:textColor="@color/colorPrimary"
+        android:text="请输入班级名称"/>
+
+    <EditText
+        android:id="@+id/input_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="116dp"
+        android:maxHeight="116dp"
+        android:maxLength="20"
+        android:gravity="start"
+        android:paddingLeft="15dp"
+        android:textColorHint="#ADADAD"
+        android:background="#EBEAEA"
+        android:scrollbars="horizontal"/>
+
+    <Button
+        android:id="@+id/input_commit"
+        style="@style/class_btn_next_style"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text_white"
+        android:text="确定"/>
+</LinearLayout>

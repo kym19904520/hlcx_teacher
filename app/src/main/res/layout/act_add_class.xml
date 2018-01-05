@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                 <com.up.common.widget.MyListView
+                     android:id="@+id/lv_grade"
+                     android:layout_width="90dp"
+                     android:fadingEdge="none"
+                     android:scrollbars="none"
+                     android:overScrollMode="never"
+                     android:layout_height="wrap_content"></com.up.common.widget.MyListView>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/sv">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_class_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="#00000000"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/ll_add_class"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="第一个创建班级的老师将成为该班级的" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="班主任，班级不可重新创建" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    style="@style/class_btn_next_style"
+                    android:text="下一步" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--<FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/sv">
+
+            <com.up.common.widget.NoScrollViewPager
+                android:id="@+id/vp_class"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.up.common.widget.NoScrollViewPager>
+        </FrameLayout>-->
+    </RelativeLayout>
+</LinearLayout>

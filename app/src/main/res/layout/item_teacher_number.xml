@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="23dp"
+    android:layout_marginTop="15dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_class_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_teacher_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/class_touxiang_01" />
+
+        <TextView
+            android:id="@+id/tv_class_teacher"
+            android:text="班主任"
+            android:textColor="#5FB5DD"
+            style="@style/tv_teacher_style" />
+
+        <TextView
+            android:id="@+id/tv_language"
+            style="@style/tv_teacher_style"
+            android:textColor="@color/text_white"
+            android:background="@mipmap/class_yuwen"
+            android:text="语文" />
+
+        <TextView
+            android:id="@+id/tv_math"
+            style="@style/tv_teacher_style"
+            android:textColor="@color/text_white"
+            android:background="@mipmap/class_shuxue"
+            android:text="数学" />
+
+        <TextView
+            android:id="@+id/tv_english"
+            style="@style/tv_teacher_style"
+            android:background="@mipmap/class_yingyu"
+            android:text="英语" />
+
+        <TextView
+            android:text="张伟"
+            android:id="@+id/tv_teacher_name"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_teacher_picture"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

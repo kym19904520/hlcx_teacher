@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        android:padding="@dimen/text_padding_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/login_text_size" />
+
+        <EditText
+            android:id="@+id/et_sname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ems="13"
+            android:hint="请输入姓名"
+            android:gravity="right"
+            android:textColorHint="@color/text_hint"
+            android:background="@android:color/transparent"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/login_text_size"
+            />
+    </RelativeLayout>
+    <View style="@style/Line.Hor_margin"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        android:padding="@dimen/text_padding_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学校邀请码"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/login_text_size" />
+
+        <EditText
+            android:id="@+id/et_ccode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ems="13"
+            android:hint="请输入学校邀请码"
+            android:gravity="right"
+            android:textColorHint="@color/text_hint"
+            android:background="@android:color/transparent"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/login_text_size"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_padding_normal"
+        android:gravity="right"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="学校为未开通？"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal" />
+        <TextView
+            android:id="@+id/tv_get_yqm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="获取试用邀请码  》"
+            android:textColor="@color/line_pink"
+            android:textSize="@dimen/text_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/big_btn_height"
+            android:background="@drawable/round_blue_background"
+            android:layout_marginLeft="@dimen/big_btn_margin_l_r"
+            android:layout_marginRight="@dimen/big_btn_margin_l_r"
+            android:layout_marginTop="70dp"
+            android:text="完成注册"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/big_btn_text_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

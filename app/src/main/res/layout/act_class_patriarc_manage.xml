@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/class_biejing"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_student_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:src="@mipmap/class_student" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tv_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="小憨憨"
+                android:textColor="@color/text_white" />
+
+            <ImageView
+                android:id="@+id/iv_student_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/tv_student_name"
+                android:src="@mipmap/class_nan" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_student_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="123456"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+
+    <TextView
+        android:text="家长(0)"
+        android:id="@+id/tv_patriarch_manage"
+        style="@style/class_tv_type_style"
+        android:drawableLeft="@mipmap/class_yjjx_01" />
+
+    <include layout="@layout/view_no_data"/>
+
+    <ListView
+        android:overScrollMode="never"
+        android:id="@+id/lv_patriarch_manage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"></ListView>
+</LinearLayout>

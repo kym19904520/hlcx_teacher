@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_normal">
+
+            <ImageView
+                android:id="@+id/iv_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_xx" />
+
+            <ImageView
+                android:id="@+id/iv_mes_num"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@id/iv_mes"
+                android:src="@drawable/circle_red_background"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_normal">
+
+            <ImageView
+                android:id="@+id/iv_bz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_bz" />
+
+            <ImageView
+                android:id="@+id/iv_bz_num"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@id/iv_bz"
+                android:src="@drawable/circle_red_background"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="161dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#33ffffff"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="【通知】"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <!--<com.up.study.weight.MyTextView
+                android:id="@+id/tv_notice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="明天放假，明天放假，明天放假，明天放假，明天放假"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small" />-->
+
+            <com.up.study.weight.AutoVerticalScrollTextView
+                android:id="@+id/textview_auto_roll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"
+                android:textColor="@color/text_gray_q"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/def_sub_bg"
+        android:padding="10dp">
+
+        <Spinner
+            android:id="@+id/spinner_1"
+            android:layout_width="0dp"
+            android:paddingTop="@dimen/spinner_padding"
+            android:paddingBottom="@dimen/spinner_padding"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@mipmap/spinner_bg" />
+
+        <Spinner
+            android:id="@+id/spinner_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@mipmap/spinner_bg"
+            android:padding="@dimen/spinner_padding" />
+
+        <Spinner
+            android:id="@+id/spinner_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@mipmap/spinner_bg"
+            android:padding="@dimen/spinner_padding" />
+    </LinearLayout>
+
+    <com.up.study.weight.LoadListView
+        android:id="@+id/lv_xs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_height"
+        android:background="@color/def_sub_bg"></com.up.study.weight.LoadListView>
+
+    <com.up.study.weight.LoadListView
+        android:id="@+id/lv_xx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_height"
+        android:background="@color/def_sub_bg"
+        android:visibility="gone"></com.up.study.weight.LoadListView>
+
+    <TextView
+        android:id="@+id/tv_no_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/gap_height"
+        android:background="@color/def_sub_bg"
+        android:drawablePadding="15sp"
+        android:drawableTop="@mipmap/home_no_task"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:text="还没有布置作业呦~"
+        android:textColor="@color/text_gray_q"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</LinearLayout>

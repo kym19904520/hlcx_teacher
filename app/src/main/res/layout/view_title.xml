@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/top_bar_color"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/class_title"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="40dp"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@mipmap/class_add" />
+
+    <TextView
+        android:id="@+id/tv_manage"
+        android:text="管理"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tv_class_select"
+        android:text="年级"
+        android:drawablePadding="10dp"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:visibility="gone"
+        android:clickable="true"
+        android:drawableRight="@mipmap/my_jt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        style="@style/spinner_style"
+        android:spinnerMode="dropdown"
+        android:padding="@dimen/spinner_padding"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

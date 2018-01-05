@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.up.teacher">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.up.study.TApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/log"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.up.study.ui.login.GuidePageActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.up.study.StartActivity"/>
+
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.up.study.MainActivity" />
+        <activity
+            android:name="com.up.study.ui.clbum.AddClassActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.up.study.ui.clbum.ClassAuditActivity" />
+        <activity android:name="com.up.study.ui.clbum.ClassDetailsManageActivity" />
+        <activity
+            android:name="com.up.study.ui.clbum.ClassManageActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.up.study.ui.login.ForgetPswActivity" />
+        <activity android:name="com.up.study.ui.login.RegisterActivity" />
+        <activity android:name="com.up.study.ui.login.UpdatePswActivity" />
+        <activity android:name="com.up.study.ui.login.LoginActivity" />
+        <activity android:name="com.up.study.ui.login.SelectSchoolActivity" />
+        <activity android:name="com.up.study.ui.home.TestInputDetailActivity" />
+        <activity android:name="com.up.study.ui.home.HomeWorkDetailActivity" />
+        <activity android:name="com.up.study.ui.home.TestStatisticsActivity" />
+        <activity android:name="com.up.study.ui.home.SeqDetailActivity" />
+        <activity android:name="com.up.study.ui.home.KnowWeaknessAnalyzeActivity" />
+        <activity android:name="com.up.study.ui.home.MessageActivity" />
+        <activity android:name="com.up.study.ui.home.MessageDetailActivity" />
+        <activity android:name="com.up.study.ui.home.OffineWorkDetailActivity" />
+        <activity android:name="com.up.study.weight.showimages.ImagePagerActivity" />
+        <activity android:name="com.up.study.ui.clbum.ClassAnotherNameAmendActivity" />
+        <activity android:name="com.up.study.ui.clbum.ClassMathNorisukeActivity" />
+        <activity android:name="com.up.study.ui.clbum.ClassStudentManageActivity" />
+        <activity android:name="com.up.study.ui.clbum.ClassTeacherManageActivity" />
+        <activity
+            android:name="com.up.study.ui.clbum.ClassEstablishActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.up.study.ui.clbum.ClassPatriarchManageActivity" />
+        <activity android:name="com.up.study.ui.clbum.ClassEnglishNorisukeActivity" />
+        <activity android:name="com.up.study.ui.clbum.ClassLanguageNorisukeActivity" />
+        <activity
+            android:name="com.up.study.ui.my.MyMessageActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.up.study.ui.my.AboutPrepActivity" />
+        <activity android:name="com.up.study.ui.my.SettingActivity" />
+        <activity android:name="com.up.study.ui.my.FeedbackActivity" />
+        <activity android:name="com.up.study.ui.my.StudentAnalyzeActivity" />
+        <activity android:name="com.up.study.ui.my.StudentAnalyzeDetailsActivity" />
+        <activity android:name="com.up.study.ui.my.StudyAnalyzeActivity" />
+        <activity android:name="com.up.study.ui.my.KnowledgePointAnalyzeActivity" />
+        <activity android:name="com.up.study.ui.my.PersonageNameActivity" />
+        <activity android:name="com.up.study.ui.clbum.ClassAnotherNameActivity" />
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.up.study.ui.home.ZjDetailsActivity"/>
+        <activity android:name="com.up.study.ui.home.SearchResultActivity"/>
+
+        <!--y c s s-->
+        <activity android:name="com.up.study.ui.home.TaskActivity" />
+        <activity android:name="com.up.study.ui.home.OnlineExerciseActivity" />
+        <activity android:name="com.up.study.ui.home.PublishTaskActivity" />
+        <activity android:name="com.up.study.ui.home.ChooseTestActivity" />
+        <activity android:name="com.up.study.ui.home.ChooseQuestionActivity" />
+        <activity android:name="com.up.study.ui.home.UpTestActivity" />
+        <activity android:name="com.up.study.ui.home.ChooseClassActivity" />
+        <activity android:name="com.up.study.ui.home.TestInfoActivity" />
+        <activity android:name="com.up.study.ui.home.NoClassActivity" />
+        <activity android:name="com.up.study.ui.home.ChooseTest2Activity" />
+        <!--y c s s-->
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_subject_change"
+        style="@style/class_rl_style">
+
+        <TextView
+            style="@style/class_tv_name_style"
+            android:text="学科切换" />
+
+        <ImageView
+            android:id="@+id/iv_arrows"
+            style="@style/class_iv_arrows_style" />
+
+        <TextView
+            android:id="@+id/tv_class_subject"
+            style="@style/class_tv_manage_style"
+            android:layout_toLeftOf="@id/iv_arrows"
+            android:textColor="@color/text_gray_q" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/class_tv_type_style"
+        android:drawableLeft="@mipmap/class_yjjx_02"
+        android:text="学生分析" />
+
+    <ListView
+        android:id="@+id/lv_student_analyze"
+        android:overScrollMode="never"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <include layout="@layout/view_no_data"/>
+</LinearLayout>

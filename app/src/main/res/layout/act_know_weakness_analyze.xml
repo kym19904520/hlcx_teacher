@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color">
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Top_Back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Top_Title"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@color/def_sub_bg"
+        android:text="语文二年级下学期半期考知识薄弱点分析"
+        android:textSize="14sp"
+        android:textColor="@color/text_black"
+        />
+    <TextView
+        style="@style/sub_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/wd_12"
+        android:text="知识薄弱点"
+        />
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/def_sub_bg"
+        android:visibility="gone"
+        >
+    </ListView>
+    <include layout="@layout/view_empty"/>
+</LinearLayout>

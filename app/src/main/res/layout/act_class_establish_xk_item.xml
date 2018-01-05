@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_select_jf"
+    android:padding="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_xk_name"
+        android:layout_marginLeft="20dp"
+        style="@style/class_tv_name_style"
+        android:text="教辅" />
+
+    <CheckBox
+        android:id="@+id/cb_xk"
+        style="@style/class_iv_arrows_style" />
+
+</RelativeLayout>

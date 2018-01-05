@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_knowledge_point" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#F0FAFF"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/my_tv_details_style"
+                        android:text="@string/my_knowledge_name" />
+
+                    <TextView
+                        style="@style/my_tv_details_style"
+                        android:text="@string/my_error_rate" />
+                </LinearLayout>
+
+                <com.up.common.widget.MyListView
+                    android:id="@+id/lv_point_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"></com.up.common.widget.MyListView>
+
+                <LinearLayout
+                    android:id="@+id/ll_no_zsd"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@mipmap/class_banji_01"
+                        style="@style/iv_no_data" />
+
+                    <TextView
+                        android:text="@string/no_zsd"
+                        style="@style/tv_no_data" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="18dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/my_section_grasp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#F0FAFF"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/my_tv_details_style"
+                            android:text="@string/my_section_name" />
+
+                        <TextView
+                            style="@style/my_tv_details_style"
+                            android:text="@string/my_error_rate" />
+                    </LinearLayout>
+
+                    <com.up.common.widget.MyListView
+                        android:id="@+id/lv_section_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:background="@color/text_white"
+                        android:divider="@null"></com.up.common.widget.MyListView>
+
+                    <LinearLayout
+                        android:id="@+id/ll_no_zj"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@mipmap/class_banji_01"
+                            style="@style/iv_no_data" />
+
+                        <TextView
+                            android:text="@string/no_zj"
+                            style="@style/tv_no_data" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_no_data" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

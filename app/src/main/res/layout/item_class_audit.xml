@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/text_white">
+
+    <ImageView
+        android:id="@+id/iv_teacher_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/class_touxiang_01" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/iv_teacher_picture"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张勇" />
+
+            <TextView
+                android:id="@+id/tv_language"
+                android:visibility="gone"
+                style="@style/class_tv_jf_style"
+                android:background="@mipmap/class_yuwen"
+                android:text="语文" />
+
+            <TextView
+                android:id="@+id/tv_math"
+                style="@style/class_tv_jf_style"
+                android:visibility="gone"
+                android:background="@mipmap/class_shuxue"
+                android:text="数学" />
+
+            <TextView
+                android:id="@+id/tv_english"
+                android:visibility="gone"
+                style="@style/class_tv_jf_style"
+                android:background="@mipmap/class_yingyu"
+                android:text="英语" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_teacher_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="1277777777" />
+
+        <TextView
+            android:id="@+id/tv_add_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="申请加入：二年1班" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_consent"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@mipmap/class_but_01"
+        android:text="同意加入"
+        android:textSize="15sp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_has_joined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        android:text="已加入" />
+</RelativeLayout>

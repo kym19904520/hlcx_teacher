@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_select_jf"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/tv_jf_name"
+        style="@style/class_tv_name_style"
+        android:text="教辅" />
+
+    <ImageView
+        android:id="@+id/iv_arrows03"
+        style="@style/class_iv_arrows_style" />
+
+    <TextView
+        android:id="@+id/tv_class_jf"
+        style="@style/class_tv_manage_style"
+        android:layout_toLeftOf="@+id/iv_arrows03"
+        android:textColor="@color/text_gray_q" />
+</RelativeLayout>

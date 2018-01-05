@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_class_portrait"
+                style="@style/class_rl_style">
+
+                <TextView
+                    style="@style/class_tv_name_style"
+                    android:text="班级头像" />
+
+                <ImageView
+                    android:id="@+id/iv_arrows"
+                    style="@style/class_iv_arrows_style" />
+
+                <ImageView
+                    android:id="@+id/iv_class_portrait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@mipmap/bj_t1"
+                    android:layout_toLeftOf="@id/iv_arrows" />
+            </RelativeLayout>
+
+            <View style="@style/class_view_style" />
+
+            <RelativeLayout
+                android:id="@+id/rl_class_name"
+                style="@style/class_rl_style">
+
+                <TextView
+                    style="@style/class_tv_name_style"
+                    android:text="班级名称" />
+
+                <TextView
+                    android:id="@+id/tv_class_name"
+                    style="@style/class_tv_style" />
+            </RelativeLayout>
+
+            <View style="@style/class_view_style" />
+
+            <RelativeLayout
+                android:id="@+id/rl_class_code"
+                style="@style/class_rl_style">
+
+                <TextView
+                    style="@style/class_tv_name_style"
+                    android:text="班级邀请码" />
+
+                <TextView
+                    android:id="@+id/tv_class_code"
+                    style="@style/class_tv_style" />
+            </RelativeLayout>
+
+            <View style="@style/class_view_style" />
+
+            <RelativeLayout
+                android:id="@+id/rl_class_another_name"
+                style="@style/class_rl_style">
+
+                <TextView
+                    style="@style/class_tv_name_style"
+                    android:text="班级别称" />
+
+                <ImageView
+                    android:id="@+id/iv_arrows01"
+                    style="@style/class_iv_arrows_style" />
+
+                <TextView
+                    android:id="@+id/tv_class_another_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_toLeftOf="@+id/iv_arrows01"
+                    android:textColor="@color/text_gray_q" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_teacher_manage"
+                style="@style/class_rl_style">
+
+                <TextView
+                    style="@style/class_tv_name_style"
+                    android:text="老师管理" />
+
+                <ImageView
+                    android:id="@+id/iv_arrows02"
+                    style="@style/class_iv_arrows_style" />
+
+            </RelativeLayout>
+
+            <View style="@style/class_view_style" />
+
+            <RelativeLayout
+                android:id="@+id/rl_student_manage"
+                style="@style/class_rl_style">
+
+                <TextView
+                    style="@style/class_tv_name_style"
+                    android:text="学生管理" />
+
+                <ImageView
+                    android:id="@+id/iv_arrows03"
+                    style="@style/class_iv_arrows_style" />
+
+            </RelativeLayout>
+
+            <View style="@style/class_view_style" />
+
+            <com.up.common.widget.MyListView
+                android:id="@+id/lv_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:overScrollMode="never"></com.up.common.widget.MyListView>
+
+            <!-- <View style="@style/class_view_style" />-->
+
+            <!-- <RelativeLayout
+                 android:id="@+id/rl_yw_jf"
+                 style="@style/class_rl_style">
+
+                 <TextView
+                     style="@style/class_tv_name_style"
+                     android:text="语文教辅" />
+
+                 <ImageView
+                     android:id="@+id/iv_arrows04"
+                     style="@style/class_iv_arrows_style" />
+
+                 <TextView
+                     android:id="@+id/tv_yw_name"
+                     android:layout_toLeftOf = "@+id/iv_arrows04"
+                     style="@style/tv_jf_style" />
+
+             </RelativeLayout>
+
+             <View style="@style/class_view_style" />
+
+             <RelativeLayout
+                 android:id="@+id/rl_sx_jf"
+                 style="@style/class_rl_style">
+
+                 <TextView
+                     style="@style/class_tv_name_style"
+                     android:text="数学教辅" />
+
+                 <ImageView
+                     android:id="@+id/iv_arrows05"
+                     style="@style/class_iv_arrows_style" />
+
+                 <TextView
+                     android:id="@+id/tv_sx_name"
+                     android:layout_toLeftOf = "@+id/iv_arrows05"
+                     style="@style/tv_jf_style" />
+             </RelativeLayout>
+
+             <View style="@style/class_view_style" />
+
+             <RelativeLayout
+                 android:id="@+id/rl_yy_jf"
+                 style="@style/class_rl_style">
+
+                 <TextView
+                     style="@style/class_tv_name_style"
+                     android:text="英语教辅" />
+
+                 <ImageView
+                     android:id="@+id/iv_arrows06"
+                     style="@style/class_iv_arrows_style" />
+
+                 <TextView
+                     android:id="@+id/tv_yy_name"
+                     android:layout_toLeftOf = "@+id/iv_arrows06"
+                     style="@style/tv_jf_style" />
+             </RelativeLayout>-->
+
+            <View style="@style/class_view_style" />
+
+            <RelativeLayout
+                android:id="@+id/rl_class_work"
+                style="@style/class_rl_style">
+
+                <TextView
+                    style="@style/class_tv_name_style"
+                    android:text="班主任转让" />
+
+                <ImageView
+                    android:id="@+id/iv_arrows07"
+                    style="@style/class_iv_arrows_style" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

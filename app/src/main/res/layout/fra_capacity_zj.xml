@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:layout_weight="1"
+        android:background="@color/text_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_class_selected"
+                style="@style/class_rl_style">
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    style="@style/class_tv_name_style"
+                    android:text="请年级选择" />
+
+                <ImageView
+                    android:id="@+id/iv_arrows01"
+                    style="@style/class_iv_arrows_style" />
+
+                <TextView
+                    android:id="@+id/tv_class_name"
+                    style="@style/class_tv_manage_style"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/iv_arrows01" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="难度设置：" />
+
+            <RelativeLayout style="@style/rl_setting_style">
+
+                <LinearLayout
+                    android:id="@+id/ll_01"
+                    style="@style/ll_setting_style">
+
+                    <ImageView
+                        style="@style/iv_setting_style"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        style="@style/iv_setting_style"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        style="@style/iv_setting_style"
+                        android:layout_marginLeft="@dimen/dp_10" />
+                </LinearLayout>
+
+                    <EditText
+                        android:layout_toRightOf="@id/ll_01"
+                        android:id="@+id/et_number01"
+                        style="@style/et_setting_style" />
+                    <TextView
+                        android:id="@+id/tv_01"
+                        android:text="题/0题"
+                        android:layout_toRightOf="@+id/et_number01"
+                        android:layout_marginRight="20dp"
+                        style="@style/tv_setting_style" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/rl_setting_style">
+
+                <LinearLayout
+                    android:id="@+id/ll_02"
+                    style="@style/ll_setting_style">
+
+                    <ImageView
+                        style="@style/iv_setting_style"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        style="@style/iv_setting_style"
+                        android:layout_marginLeft="@dimen/dp_10" />
+
+                    <ImageView
+                        style="@style/iv_setting_style"
+                        android:layout_marginLeft="@dimen/dp_10" />
+                </LinearLayout>
+
+                    <EditText
+                        android:layout_toRightOf="@id/ll_02"
+                        android:id="@+id/et_number02"
+                        style="@style/et_setting_style" />
+
+                    <TextView
+                        android:id="@+id/tv_02"
+                        android:text="题/0题"
+                        android:layout_toRightOf="@+id/et_number02"
+                        style="@style/tv_setting_style" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/rl_setting_style">
+
+                <LinearLayout
+                    android:id="@+id/ll_03"
+                    style="@style/ll_setting_style">
+
+                    <ImageView
+                        style="@style/iv_setting_style" />
+
+                    <ImageView
+                        style="@style/iv_setting_style"
+                        android:layout_marginLeft="@dimen/dp_10" />
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        style="@style/iv_setting_style" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_toRightOf="@id/ll_03"
+                    android:id="@+id/et_number03"
+                    style="@style/et_setting_style" />
+
+                <TextView
+                    android:id="@+id/tv_03"
+                    android:layout_toRightOf="@id/et_number03"
+                    android:text="题/0题"
+                    style="@style/tv_setting_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="50dp"
+                style="@style/rl_setting_style">
+
+                <TextView
+                    android:id="@+id/tv_selected"
+                    android:text="已选：0题"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_total_number"
+                    android:text="题库数量：0题"
+                    android:layout_toRightOf="@id/tv_selected"
+                    android:layout_marginLeft="140dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/button_big"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:text="下一步" />
+</LinearLayout>
